@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int sum(int a , int b); // Function Prototype
+
+int main() {
+    int a , b;
+    printf("Enter two number : ");
+    scanf("%d %d", &a , &b);
+    printf("%d + %d = %d\n", a , b , sum(a , b));
+    return 0;
+}
+
+int sum(int a , int b) { // Function Defination
+    return a + b;
+}
